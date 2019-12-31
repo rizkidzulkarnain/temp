@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="id.co.telkom.commons.feature.login.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_ffffff"
+        android:padding="@dimen/dimens_16dp"
+        tools:context=".feature.login.LoginActivity">
+
+        <TextView
+            android:id="@+id/tv_sign_in"
+            style="@style/TextBlueBold334867.20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_sign_in_with"
+            style="@style/TextBlueBold334867.14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_80dp"
+            android:text="@string/sign_in_with"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sign_in" />
+
+        <id.co.telkom.commons.widget.button.PrimaryButton
+            android:id="@+id/btn_facebook"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="@dimen/dimens_40dp"
+            android:layout_marginTop="@dimen/dimens_16dp"
+            android:layout_marginEnd="@dimen/dimens_6dp"
+            android:layout_marginRight="@dimen/dimens_6dp"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="@string/facebook"
+            app:buttonColor="@drawable/all_selector_button_rounded_corner_dark_blue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_google"
+            app:layout_constraintTop_toBottomOf="@id/tv_sign_in_with" />
+
+        <id.co.telkom.commons.widget.button.PrimaryButton
+            android:id="@+id/btn_google"
+            android:layout_width="@dimen/dimens_0dp"
+            android:layout_height="@dimen/dimens_40dp"
+            android:layout_marginStart="@dimen/dimens_6dp"
+            android:layout_marginLeft="@dimen/dimens_6dp"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="@string/google"
+            app:buttonColor="@drawable/all_selector_button_rounded_corner_light_blue"
+            app:layout_constraintLeft_toRightOf="@+id/btn_facebook"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_facebook" />
+
+        <TextView
+            android:id="@+id/tv_or"
+            style="@style/TextBlueBold334867.14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_32dp"
+            android:text="@string/or"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_sign_in_with"
+            app:layout_constraintTop_toBottomOf="@+id/btn_facebook" />
+
+        <id.co.telkom.commons.widget.edittext.PrimaryOutlineEditText
+            android:id="@+id/poe_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_or"
+            app:textInputLayoutHint="@string/email" />
+
+        <id.co.telkom.commons.widget.edittext.PrimaryOutlineEditText
+            android:id="@+id/poe_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poe_email"
+            app:textInputLayoutHint="@string/password" />
+
+        <id.co.telkom.commons.widget.button.SecondaryButton
+            android:id="@+id/sb_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_40dp"
+            android:layout_marginTop="@dimen/dimens_32dp"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="@string/sign_in"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poe_password" />
+
+        <TextView
+            android:id="@+id/tv_need_account"
+            style="@style/TextBlueLight334867.14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_32dp"
+            android:text="@string/need_account"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sb_sign_in" />
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            style="@style/TextLightBlueBold.14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_16dp"
+            android:layout_marginTop="@dimen/dimens_32dp"
+            android:text="@string/sign_up"
+            app:layout_constraintLeft_toRightOf="@+id/tv_need_account"
+            app:layout_constraintTop_toBottomOf="@+id/sb_sign_in" />
+
+        <TextView
+            android:id="@+id/tv_forgot_your_password"
+            style="@style/TextBlueLight334867.14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_32dp"
+            android:text="@string/forgot_your_password"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_need_account" />
+
+        <TextView
+            android:id="@+id/tv_retrieve"
+            style="@style/TextLightBlueBold.14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_16dp"
+            android:layout_marginTop="@dimen/dimens_32dp"
+            android:text="@string/retrieve"
+            app:layout_constraintLeft_toRightOf="@+id/tv_forgot_your_password"
+            app:layout_constraintTop_toBottomOf="@+id/tv_need_account" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

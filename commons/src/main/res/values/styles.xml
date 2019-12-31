@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextLightGrayNormal" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/gray_C7C5D0</item>
+    </style>
+
+    <style name="TextLightGrayNormal.12sp">
+        <item name="android:textSize">@dimen/text_12sp</item>
+    </style>
+
+    <style name="TextLightGrayNormal.14sp">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+
+    <style name="TextLightGrayNormal.16sp">
+        <item name="android:textSize">@dimen/text_16sp</item>
+    </style>
+
+    <style name="TextLightGrayBold" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/gray_C7C5D0</item>
+    </style>
+
+    <style name="TextLightGrayBold.12sp">
+        <item name="android:textSize">@dimen/text_12sp</item>
+    </style>
+
+    <style name="TextLightGrayBold.14sp">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+
+    <style name="TextLightGrayBold.16sp">
+        <item name="android:textSize">@dimen/text_16sp</item>
+    </style>
+
+    <style name="TextLightGrayBold.20sp">
+        <item name="android:textSize">@dimen/text_20sp</item>
+    </style>
+
+    <style name="TextBlueBold334867" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/blue_334867</item>
+    </style>
+
+    <style name="TextBlueBold334867.20sp">
+        <item name="android:textSize">@dimen/text_20sp</item>
+    </style>
+
+    <style name="TextBlueBold334867.14sp">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+
+    <style name="TextBlueLight334867" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/blue_334867</item>
+    </style>
+
+    <style name="TextBlueLight334867.14sp">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+
+    <style name="TextLightBlueBold" parent="android:TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/blue_1CCAFF</item>
+    </style>
+
+    <style name="TextLightBlueBold.14sp">
+        <item name="android:textSize">@dimen/text_14sp</item>
+    </style>
+</resources>

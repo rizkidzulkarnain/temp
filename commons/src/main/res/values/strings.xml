@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">commons</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="facebook" translatable="false">Facebook</string>
+    <string name="forgot_your_password" translatable="false">Forgot Your Password ?</string>
+    <string name="google" translatable="false">Google</string>
+    <string name="need_account" translatable="false">Need Account ?</string>
+    <string name="or" translatable="false">Or</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="retrieve" translatable="false">Retrieve</string>
+    <string name="sign_in" translatable="false">Sign in</string>
+    <string name="sign_in_with" translatable="false">Sign in with</string>
+    <string name="sign_up" translatable="false">Sign up</string>
+</resources>
